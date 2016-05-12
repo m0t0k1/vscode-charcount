@@ -22,7 +22,6 @@ export function activate(context: ExtensionContext) {
         // The code you place here will be executed every time your command is executed
 
         // Display a message box to the user
-        //window.showInformationMessage('Hello World!');
         charCounter.updateCharCount();
     });
 
@@ -31,7 +30,7 @@ export function activate(context: ExtensionContext) {
     context.subscriptions.push(disposable);
 }
 
-class CharCounter {
+export class CharCounter {
     private _statusBarItem: StatusBarItem;
     
     public updateCharCount(){
