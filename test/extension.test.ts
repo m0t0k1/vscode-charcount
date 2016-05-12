@@ -20,7 +20,7 @@ suite("Extension Tests", () => {
         let counter = new myExtension.CharCounter();
         vscode.workspace.openTextDocument(path.join(__dirname, "..", "..", 'README.md'))
         .then((document) => {
-            assert.equal(counter._getCharCount(document), 536);
+            assert.equal(counter._getCharCount(document),102);
             done();
         }, (error) => {
             assert.fail(error);
